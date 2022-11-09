@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+     <h1>Saldo Bancário</h1>
+    <div id ="total"></div>
+<body>
+    
+
+    <script>
+    let nomeCorrentista = prompt ("Digite o nome do Correntista");
+    let nomeBanco = prompt ("Digite o nome do banco.");
+    let numeroConta = prompt ("Digite o número da conta.");
+    let valorTotalChequesDebitar = prompt ("Digite o valor total dos cheques a debitar ");
+    let TotalDinheiroChequesCreditar = prompt ("Digite o total de dinheiro e cheques á creditar.");
+    const limiteCredito = 1200;
+    let saldoAtual = prompt ("Digite o saldo atual");
+    let saldoDisponivel = (Number(TotalDinheiroChequesCreditar) + Number(limiteCredito)) - Number (valorTotalChequesDebitar);
+
+  document.getElementById("total").innerHTML ="Cliente" + nomeCorrentista + "</br>Banco:" + nomeBanco + "</br>C/C:" + numeroConta + "</br>Saldo disponivel:" + saldoDisponivel;
+
+    </script>
+</body>
+</html>

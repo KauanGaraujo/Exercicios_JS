@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calcular</h1>
+    <div id = "calculo"></div>
+
+    <script>
+        let hora = Number (prompt("Digite a Hora"));
+        let minutos = Number (prompt("Digite os Minutos"));
+        let segundos = Number (prompt("Digite os Segundos"));
+
+
+
+        somaSegundos = Number (hora * 3600) + (minutos *60) + segundos;
+        
+        document.getElementById("calculo").innerHTML = "Hora:" + hora + "</br>Minutos:" + minutos + "</br> Segundos:" + segundos + "</br>Total em Segundos:" + somaSegundos;
+
+
+    </script>
+</body>
+</html>

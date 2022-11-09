@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <h1>NOTAS</h1>
+   <div id="notas"></div>
+   
+<body>
+    <script>
+         let nota1 =  Number (prompt("Digite a Primeira Nota"));
+        let nota2 = Number (prompt("Digite a segunda Nota"));
+        let nota3 = Number (prompt("Digite a Terceira Nota"));
+
+        soma = Number (((nota1/3) + (nota2/3) + nota3/3));
+    
+        document.getElementById("notas").innerHTML = "Nota 1:" + nota1 + "</br>Nota 2:" + nota2 + "</br> Nota 3:" + nota3 + "</br>Total:" + soma;
+
+    </script>
+</body>
+</html>
